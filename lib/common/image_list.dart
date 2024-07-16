@@ -14,17 +14,13 @@ final List<String> listImagesDrink = [
 ];
 
 final List<String> listImagesWine = [
-  AppPath.wine1,
-  AppPath.wine2,
-  AppPath.wine3,
-  AppPath.wine4,
-  AppPath.wine5,
-  AppPath.wine6,
+  // AppPath.wine1,
+  // AppPath.wine2,
+  // AppPath.wine3,
+  // AppPath.wine4,
+  // AppPath.wine5,
+  // AppPath.wine6,
   AppPath.wine7,
 ];
 
-final List<String> listImageAll = [
-  ...listImagesDrink,
-  ...listImagesWine,
-  ...listImagesCake,
-];
+final List<String> listImageAll = [];
