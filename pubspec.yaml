@@ -1,0 +1,54 @@
+name: hikari
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  google_fonts: 6.1.0
+  dropdown_button2: ^2.3.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.9
+  flutter_gen_runner: ^5.6.0
+
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/cake/
+    - assets/images/dessert/
+    - assets/images/drinks/
+    - assets/images/logo/
+    - assets/images/fried_item/
+    - assets/images/grill/
+    - assets/images/hotpot/
+    - assets/images/itame/
+    - assets/images/juice/
+    - assets/images/okonomi_yaki/
+    - assets/images/other/
+    - assets/images/otsumami/
+    - assets/images/rice/
+    - assets/images/roll/
+    - assets/images/salad/
+    - assets/images/sashimi/
+    - assets/images/shusi/
+    - assets/images/soup/
+    - assets/images/steak/
+    - assets/images/wine/
+
+
