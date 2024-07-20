@@ -1,4 +1,4 @@
-# Hikari
+# hikari
 
 A new Flutter project.
 

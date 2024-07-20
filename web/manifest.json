@@ -1,6 +1,6 @@
 {
-    "name": "Hikari",
-    "short_name": "Hikari",
+    "name": "hikari",
+    "short_name": "hikari",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

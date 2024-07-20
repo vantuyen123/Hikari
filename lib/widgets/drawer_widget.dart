@@ -4,8 +4,8 @@ import 'package:hikari/common/custom_size.dart';
 import 'package:hikari/common/image_list.dart';
 
 class CustomDrawer extends StatelessWidget {
-  final List<String> selectedListImage;
-  final ValueChanged<List<String>> onItemTapped;
+  final int selectedListImage;
+  final ValueChanged<int> onItemTapped;
 
   const CustomDrawer({
     Key? key,
@@ -51,45 +51,54 @@ class CustomDrawer extends StatelessWidget {
           Expanded(
             child: ListView(
               children: [
-                ListTile(
-                  title: const Text(
-                    'Drink',
-                    textAlign: TextAlign.center,
-                  ),
-                  selected: selectedListImage == listImagesDrink,
-                  onTap: () {
-                    onItemTapped(listImagesDrink);
-                    Navigator.pop(context);
-                  },
-                ),
-                ListTile(
-                  title: const Text(
-                    'cake',
-                    textAlign: TextAlign.center,
-                  ),
-                  selected: selectedListImage == listImagesCake,
-                  onTap: () {
-                    onItemTapped(listImagesCake);
-                    Navigator.pop(context);
-                  },
-                ),
-                ListTile(
-                  title: const Text(
-                    'wine',
-                    textAlign: TextAlign.center,
-                  ),
-                  selected: selectedListImage == listImagesWine,
-                  onTap: () {
-                    onItemTapped(listImagesWine);
-                    Navigator.pop(context);
-                  },
-                ),
+                // _buildListTile(context, 'Drink', listImagesDrink),
+                // _buildListTile(context, 'Juice', listImagesJuice),
+                // _buildListTile(context, 'Dessert', listDessert),
+                // _buildListTile(context, 'Wine', listImagesWine),
+                // _buildListTile(context, 'Cake', listImagesCake),
+                // _buildListTile(context, 'Sashimi', listImagesSashimi),
+                // _buildListTile(context, 'Salad', listImagesSalad),
+                // _buildListTile(context, 'Otsumami', listImagesOtatusmi),
+                // _buildListTile(context, 'Itame', listImagesItame),
+                // _buildListTile(context, 'Okonomi Yaki', listOknomiYaki),
+                // _buildListTile(context, 'Steak', listSteak),
+                // _buildListTile(context, 'Grill', listGrill),
+                // _buildListTile(context, 'Fried Item', listFriedItem),
+                // _buildListTile(context, 'Steak', listSteak),
+                // _buildListTile(context, 'Hotpot', listHotPot),
+                // _buildListTile(context, 'SuShi', listImagesSushi),
+                // _buildListTile(context, 'Roll', listImagesRoll),
+                // _buildListTile(context, 'Rice', listRice),
+                // _buildListTile(context, 'Noodles', listNoodles),
+                // _buildListTile(context, 'Soup', listSoup),
+                // _buildListTile(context, 'Other', listSoup),
+                _buildListTile(context, 'Drink', 1),
+                _buildListTile(context, 'Juice', 2),
+                _buildListTile(context, 'Dessert', 7),
+                _buildListTile(context, 'Wine', 1),
+                _buildListTile(context, 'Cake', 1),
+                _buildListTile(context, 'Sashimi', 1),
+                _buildListTile(context, 'Salad', 1),
+                _buildListTile(context, 'Otsumami', 1),
+                _buildListTile(context, 'Itame', 1),
+                _buildListTile(context, 'Okonomi Yaki', 1),
+                _buildListTile(context, 'Steak', 1),
+                _buildListTile(context, 'Grill', 1),
+                _buildListTile(context, 'Fried Item', 1),
+                _buildListTile(context, 'Steak', 1),
+                _buildListTile(context, 'Hotpot', 1),
+                _buildListTile(context, 'SuShi', 1),
+                _buildListTile(context, 'Roll', 1),
+                _buildListTile(context, 'Rice', 1),
+                _buildListTile(context, 'Noodles', 1),
+                _buildListTile(context, 'Soup', 1),
+                _buildListTile(context, 'Other', 1),
               ],
             ),
           ),
           const SizedBox(height: 24),
           Text(
-            'Số điện thoại của nhà hàng',
+            '0931861588',
             style: GoogleFonts.openSans(
               fontWeight: FontWeight.w400,
               color: Colors.red,
@@ -99,6 +108,29 @@ class CustomDrawer extends StatelessWidget {
           const SizedBox(height: 20)
         ],
       ),
+    );
+  }
+
+  Widget _buildListTile(
+    BuildContext context,
+    String title,
+    int indexImg,
+  ) {
+    return ListTile(
+      title: Text(
+        title,
+        textAlign: TextAlign.center,
+        style: GoogleFonts.openSans(
+          fontWeight: FontWeight.w400,
+          color: Colors.black,
+          fontSize: menuFontSize(context),
+        ),
+      ),
+      selected: selectedListImage == indexImg,
+      onTap: () {
+        onItemTapped(indexImg);
+        Navigator.pop(context);
+      },
     );
   }
 }

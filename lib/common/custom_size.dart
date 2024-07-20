@@ -7,7 +7,7 @@ double horizontalMargin(BuildContext context) {
   } else if (screenWidth >= 600) {
     return 100.0; // Tablet
   } else {
-    return 8.0; // Mobile
+    return 0; // Mobile
   }
 }
 
