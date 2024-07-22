@@ -1,4 +1,4 @@
-import 'package:hikari/common/app_path.dart';
+import 'package:hikami_sushi/common/app_path.dart';
 
 final List<String> listImagesDrink = [
   AppPath.a1,

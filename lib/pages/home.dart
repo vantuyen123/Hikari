@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hikari/common/custom_size.dart';
-import 'package:hikari/common/image_list.dart';
-import 'package:hikari/pages/widgets/header_widget.dart';
-import 'package:hikari/widgets/drawer_widget.dart';
+import 'package:hikami_sushi/common/custom_size.dart';
+import 'package:hikami_sushi/common/image_list.dart';
+import 'package:hikami_sushi/pages/widgets/header_widget.dart';
+import 'package:hikami_sushi/widgets/drawer_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hikari/common/custom_size.dart';
+import 'package:hikami_sushi/common/custom_size.dart';
 
 class CustomDrawer extends StatelessWidget {
   final ValueChanged<int> onItemTapped;

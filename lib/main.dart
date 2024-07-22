@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 // ignore: avoid_web_libraries_in_flutter
-import 'package:hikari/pages/home.dart';
+import 'package:hikami_sushi/pages/home.dart';
 
 void main() {
   runApp(const MyApp());

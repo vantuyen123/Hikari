@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hikari/common/app_path.dart';
-import 'package:hikari/widgets/custom_dropdown.dart';
+import 'package:hikami_sushi/common/app_path.dart';
+import 'package:hikami_sushi/widgets/custom_dropdown.dart';
 
 class HeaderWidget extends StatelessWidget {
   const HeaderWidget({
