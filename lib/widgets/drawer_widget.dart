@@ -63,6 +63,7 @@ class CustomDrawer extends StatelessWidget {
                 _buildListTile(context, 'Rice', 55),
                 _buildListTile(context, 'Noodles', 60),
                 _buildListTile(context, 'Soup', 64),
+                _buildListTile(context, 'Lucnh Menu', 66),
               ],
             ),
           ),

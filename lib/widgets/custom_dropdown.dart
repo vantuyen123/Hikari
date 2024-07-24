@@ -31,6 +31,7 @@ class CustomDropdown extends StatelessWidget {
       {'value': 55, 'label': 'Rice'},
       {'value': 60, 'label': 'Noodles'},
       {'value': 64, 'label': 'Soup'},
+      {'value': 66, 'label': 'Lunch Menu'},
     ];
 
     return DropdownButton2<int>(

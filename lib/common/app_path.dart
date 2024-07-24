@@ -82,4 +82,13 @@ class AppPath {
 
   static const String a65 = 'assets/images/soup/65.jpg';
   static const String a66 = 'assets/images/soup/66.jpg';
+
+  static const String a68 = 'assets/images/lunchMenu/1.jpg';
+  static const String a69 = 'assets/images/lunchMenu/2.jpg';
+  static const String a70 = 'assets/images/lunchMenu/3.jpg';
+  static const String a71 = 'assets/images/lunchMenu/4.jpg';
+  static const String a72 = 'assets/images/lunchMenu/5.jpg';
+  static const String a73 = 'assets/images/lunchMenu/6.jpg';
+  static const String a74 = 'assets/images/lunchMenu/7.jpg';
+  static const String a75 = 'assets/images/lunchMenu/8.jpg';
 }

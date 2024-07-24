@@ -74,11 +74,10 @@ class _HomePageState extends State<HomePage> {
                   itemCount: listImage.length,
                   itemBuilder: (_, index) {
                     String item = listImage[index];
-                    print('index ${index}, value: ${listImage[index]}');
-                    return Padding(
-                      padding: const EdgeInsets.only(bottom: 5),
-                      child: Image.asset(item, key: _keys[index]),
-                    );
+                    return Container(
+                        color: Colors.blue,
+                        child: Image.asset(item,
+                            fit: BoxFit.fill, key: _keys[index]));
                   },
                 ),
               ),
