@@ -11,7 +11,6 @@ final List<String> listImagesDrink = [
 
 final List<String> listDessert = [
   AppPath.a7,
-  AppPath.a15,
 ];
 
 final List<String> listImagesWine = [
@@ -125,6 +124,7 @@ final List<String> listImageAll = [
   ...listDessert,
   ...listImagesWine,
   ...listImagesSashimi,
+  ...listImagesSushi,
   ...listImagesSalad,
   ...listImagesOtatusmi,
   ...listImagesItame,
@@ -132,7 +132,6 @@ final List<String> listImageAll = [
   ...listGrill,
   ...listFriedItem,
   ...listHotPot,
-  ...listImagesSushi,
   ...listRice,
   ...listNoodles,
   ...listSoup,

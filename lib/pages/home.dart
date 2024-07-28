@@ -74,6 +74,7 @@ class _HomePageState extends State<HomePage> {
                   itemCount: listImage.length,
                   itemBuilder: (_, index) {
                     String item = listImage[index];
+                    print('index ${index}, value: ${listImage[index]}');
                     return Container(
                         color: Colors.blue,
                         child: Image.asset(item,
