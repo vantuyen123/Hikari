@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hikari/common/custom_size.dart';
-import 'package:hikari/common/image_list.dart';
-import 'package:hikari/pages/widgets/header_widget.dart';
-import 'package:hikari/widgets/drawer_widget.dart';
+import 'package:hikami_sushi/common/custom_size.dart';
+import 'package:hikami_sushi/common/image_list.dart';
+import 'package:hikami_sushi/pages/widgets/header_widget.dart';
+import 'package:hikami_sushi/widgets/drawer_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
@@ -27,8 +27,9 @@ class _HomePageState extends State<HomePage> {
     _keys.addAll(List.generate(listImageAll.length, (index) => GlobalKey()));
   }
 
-  void _onItemTapped(List<String> index) {
-    _scrollToIndex(10);
+  void _onItemTapped(int index) {
+    _scrollToIndex(index);
+    print('index ${index}, value: ${listImage[index]}');
     // setState(() {
     //   listImage = index;
     // });
@@ -52,10 +53,9 @@ class _HomePageState extends State<HomePage> {
     isTabletOrDesktop = screenWidth > 800;
     return Scaffold(
       backgroundColor: const Color(0xFF101010),
-      // drawer: CustomDrawer(
-      //   onItemTapped: _onItemTapped,
-      //   selectedListImage: listImage,
-      // ),
+      drawer: CustomDrawer(
+        onItemTapped: _onItemTapped,
+      ),
       body: Scrollbar(
         controller: _scrollController,
         thickness: 12.0,
@@ -74,10 +74,11 @@ class _HomePageState extends State<HomePage> {
                   itemCount: listImage.length,
                   itemBuilder: (_, index) {
                     String item = listImage[index];
-                    return Padding(
-                      padding: const EdgeInsets.only(bottom: 5),
-                      child: Image.asset(item, key: _keys[index]),
-                    );
+                    print('index ${index}, value: ${listImage[index]}');
+                    return Container(
+                        color: Colors.blue,
+                        child: Image.asset(item,
+                            fit: BoxFit.fill, key: _keys[index]));
                   },
                 ),
               ),
@@ -89,7 +90,7 @@ class _HomePageState extends State<HomePage> {
                   },
                   onSelectCategory: _onItemTapped,
                   isTabletOrDesktop: isTabletOrDesktop,
-                  listImage: listImage),
+                  index: 0),
             ],
           ),
         ),

@@ -1,11 +1,11 @@
 {
-    "name": "hikari",
-    "short_name": "hikari",
+    "name": "Hikami Sushi",
+    "short_name": "Hikami Sushi",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Hikami Sushi",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

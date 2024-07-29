@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hikari/common/custom_size.dart';
-import 'package:hikari/common/image_list.dart';
+import 'package:hikami_sushi/common/custom_size.dart';
 
 class CustomDropdown extends StatelessWidget {
-  final List<String> selectedListImage;
-  final ValueChanged<List<String>> onItemTapped;
+  final int selectedListImage;
+  final ValueChanged<int> onItemTapped;
 
   const CustomDropdown({
     Key? key,
@@ -17,32 +16,26 @@ class CustomDropdown extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<Map<String, dynamic>> menuItems = [
-      {'value': listImageAll, 'label': 'Menu'},
-      {'value': listImagesDrink, 'label': 'Drink'},
-      // {'value': listImagesJuice, 'label': 'Juice'},
-      {'value': listDessert, 'label': 'Dessert'},
-      {'value': listImagesWine, 'label': 'Wine'},
-      // {'value': listImagesCake, 'label': 'Cake'},
-      {'value': listImagesSashimi, 'label': 'Sashimi'},
-      {'value': listImagesSalad, 'label': 'Salad'},
-      {'value': listImagesOtatusmi, 'label': 'Otsumami'},
-      {'value': listImagesItame, 'label': 'Itame'},
-      {'value': listOknomiYaki, 'label': 'Okonomi Yaki'},
-      // {'value': listSteak, 'label': 'Steak'},
-      {'value': listGrill, 'label': 'Grill'},
-      {'value': listFriedItem, 'label': 'Fried Item'},
-      // {'value': listSteak, 'label': 'Steak'},
-      {'value': listHotPot, 'label': 'Hotpot'},
-      {'value': listImagesSushi, 'label': 'SuShi'},
-      // {'value': listImagesRoll, 'label': 'Roll'},
-      {'value': listRice, 'label': 'Rice'},
-      {'value': listNoodles, 'label': 'Noodles'},
-      {'value': listSoup, 'label': 'Soup'},
-      {'value': listSoup, 'label': 'Other'},
+      {'value': 0, 'label': 'Drink'},
+      {'value': 6, 'label': 'Dessert'},
+      {'value': 7, 'label': 'Wine'},
+      {'value': 14, 'label': 'Sashimi'},
+      {'value': 22, 'label': 'SuShi'},
+      {'value': 29, 'label': 'Salad'},
+      {'value': 31, 'label': 'Otsumami'},
+      {'value': 38, 'label': 'Itame'},
+      {'value': 41, 'label': 'Okonomi Yaki'},
+      {'value': 42, 'label': 'Grill'},
+      {'value': 49, 'label': 'Fried Item'},
+      {'value': 52, 'label': 'Hotpot'},
+      {'value': 54, 'label': 'Rice'},
+      {'value': 59, 'label': 'Noodles'},
+      {'value': 63, 'label': 'Soup'},
+      {'value': 65, 'label': 'Set Lunch'},
     ];
 
-    return DropdownButton2<List<String>>(
-      value: selectedListImage,
+    return DropdownButton2<int>(
+      value: null,
       menuItemStyleData: const MenuItemStyleData(),
       dropdownStyleData: DropdownStyleData(
           maxHeight: 400,
@@ -57,7 +50,7 @@ class CustomDropdown extends StatelessWidget {
         ),
       ),
       items: menuItems.map((item) {
-        return DropdownMenuItem<List<String>>(
+        return DropdownMenuItem<int>(
           value: item['value'],
           child: Text(
             item['label'],

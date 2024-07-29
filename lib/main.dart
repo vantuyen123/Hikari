@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hikari/pages/home.dart';
+// ignore: avoid_web_libraries_in_flutter
+import 'package:hikami_sushi/pages/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Hikari',
+      title: 'Hikami Sushi',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,

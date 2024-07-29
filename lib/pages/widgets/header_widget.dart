@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hikari/common/app_path.dart';
-import 'package:hikari/widgets/custom_dropdown.dart';
+import 'package:hikami_sushi/common/app_path.dart';
+import 'package:hikami_sushi/widgets/custom_dropdown.dart';
 
 class HeaderWidget extends StatelessWidget {
   const HeaderWidget({
@@ -8,13 +8,13 @@ class HeaderWidget extends StatelessWidget {
     required this.onClickLogo,
     required this.onSelectCategory,
     required this.isTabletOrDesktop,
-    required this.listImage,
+    required this.index,
   });
 
   final Function() onClickLogo;
-  final Function(List<String> index) onSelectCategory;
+  final Function(int index) onSelectCategory;
   final bool isTabletOrDesktop;
-  final List<String> listImage;
+  final int index;
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +30,8 @@ class HeaderWidget extends StatelessWidget {
           GestureDetector(
             onTap: onClickLogo,
             child: const SizedBox(
-              width: 100,
-              height: 100,
+              width: 50,
+              height: 50,
               child: CircleAvatar(
                 backgroundImage: AssetImage(AppPath.logo),
               ),
@@ -44,7 +44,7 @@ class HeaderWidget extends StatelessWidget {
               Visibility(
                 visible: isTabletOrDesktop,
                 child: CustomDropdown(
-                  selectedListImage: listImage,
+                  selectedListImage: index,
                   onItemTapped: onSelectCategory,
                 ),
               ),
