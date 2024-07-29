@@ -7,7 +7,7 @@ class AppPath {
   static const String a5 = 'assets/images/drinks/5.jpg';
   static const String a6 = 'assets/images/drinks/6.jpg';
   static const String a7 = 'assets/images/dessert/7.jpg';
-  static const String a15 = 'assets/images/dessert/7.jpg';
+  static const String a15 = 'assets/images/dessert/15.jpg';
   static const String a8 = 'assets/images/wine/8.jpg';
   static const String a9 = 'assets/images/wine/9.jpg';
   static const String a10 = 'assets/images/wine/10.jpg';
