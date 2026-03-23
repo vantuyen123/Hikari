@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "591935323527",
+    "project_id": "hikamisushi-489d1",
+    "storage_bucket": "hikamisushi-489d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591935323527:android:eab7697483ef0e11d8e722",
+        "android_client_info": {
+          "package_name": "com.example.firebase_chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYicKdbrYUhOGihnOu9_oYRpTle0NxThk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:591935323527:android:428e37f9f9a2e38dd8e722",
+        "android_client_info": {
+          "package_name": "com.hikamishusi.vn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYicKdbrYUhOGihnOu9_oYRpTle0NxThk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

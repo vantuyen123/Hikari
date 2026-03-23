@@ -29,7 +29,6 @@ class _HomePageState extends State<HomePage> {
 
   void _onItemTapped(int index) {
     _scrollToIndex(index);
-    print('index ${index}, value: ${listImage[index]}');
     // setState(() {
     //   listImage = index;
     // });
@@ -74,7 +73,6 @@ class _HomePageState extends State<HomePage> {
                   itemCount: listImage.length,
                   itemBuilder: (_, index) {
                     String item = listImage[index];
-                    print('index ${index}, value: ${listImage[index]}');
                     return Container(
                         color: Colors.blue,
                         child: Image.asset(item,

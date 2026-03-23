@@ -21,7 +21,7 @@ class HeaderWidget extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 16),
       decoration: BoxDecoration(
-        color: const Color(0xFF2f2f2f).withOpacity(0.7),
+        color: const Color(0xFF2f2f2f).withValues(alpha: 0.7),
       ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,

@@ -40,7 +40,7 @@ class CustomDropdown extends StatelessWidget {
       dropdownStyleData: DropdownStyleData(
           maxHeight: 400,
           decoration:
-              BoxDecoration(color: const Color(0xFF272727).withOpacity(0.5))),
+              BoxDecoration(color: const Color(0xFF272727).withValues(alpha: 0.5))),
       hint: Text(
         'Menu',
         style: GoogleFonts.openSans(
